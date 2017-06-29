@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "Page Top",
+    "description": "Go to page top",
+    "version": "1.0",
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": {
+        "32": "page-top.png"
+      }
+    }
+}
