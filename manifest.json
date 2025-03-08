@@ -1,20 +1,28 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
 
     "name": "Back to Top",
-    "description": "Scroll to the top of the page. No animation. Minimal memory usage.",
-    "version": "1.0",
+    "description": "Instantly jump to the top of your active webpage with a single click.",
+    "version": "1.1",
+    "icons": {
+      "24": "icon24.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
 
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "service_worker": "background.js"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "scripting"
     ],
-    "browser_action": {
+    "action": {
       "default_icon": {
-        "32": "icon.png"
+        "24": "icon24.png",
+        "32": "icon32.png",
+        "48": "icon48.png"
       }
     }
 }
